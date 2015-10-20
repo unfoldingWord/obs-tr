@@ -5,9 +5,11 @@
  * Most of these are overrides of the reveal defaults
  */
 
+/*
 body {
     font-family: 'Lato', Helvetica, sans-serif;
 }
+*/
 
 .meny {
     overflow: auto;
@@ -74,7 +76,7 @@ body {
 .reveal p {
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
-    font-family: 'Lato', Helvetica, sans-serif;
+    /* font-family: 'Lato', Helvetica, sans-serif; */
 }
 
 div.reveal div.slides section {

@@ -65,6 +65,32 @@
   src: url('https://unfoldingword.org/css/fonts/noto/notosansdevanagari-bold.woff2') format('woff2'), url('https://unfoldingword.org/css/fonts/noto/notosansdevanagari-bold.woff') format('woff');
 }
 
+* { font-family: 'NotoSans', sans-serif; }
+
+:lang(am),
+:lang(gez),
+:lang(ti),
+:lang(tir),
+:lang(tig) {
+  font-family: NotoSans, NotoSansEthiopic, sans-serif;
+  word-spacing: .02em;
+}
+
+/* remove bold styling from heading for Ethiopic languages, per SIL example of this font's usage */
+:lang(am) h1,
+:lang(gez) h1,
+:lang(ti) h1,
+:lang(tir) h1,
+:lang(tig) h1 {
+  font-weight: normal;
+}
+
+/* Arabic script */
+:lang(fa) { font-family: NotoSans, NotoNaskhArabic, sans-serif; }
+
+/* Devanagari script */
+:lang(sgj) { font-family: NotoSans, NotoSansDevanagari, sans-serif; }
+
 /**
  * Default theme for reveal.js.
  *
@@ -91,7 +117,7 @@ body {
   background-color: #2b2b2b; }
 
 .reveal {
-  font-family: NotoSans, NotoSansEthiopic, NotoNaskhArabic, NotoSansDevanagari, sans-serif;
+  /* font-family: NotoSans, NotoSansEthiopic, NotoNaskhArabic, NotoSansDevanagari, sans-serif; */
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -113,7 +139,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: "League Gothic", Impact, sans-serif;
+  /* font-family: "League Gothic", Impact, sans-serif; */
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: uppercase;
