@@ -1,102 +1,106 @@
 <!doctype html>
-<html lang="en">
+<!--suppress ALL -->
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
 
-    <head>
-        <meta charset="utf-8">
+    <title>unfoldingWord Open Bible Stories</title>
 
-        <title>unfoldingWord Open Bible Stories</title>
+    <meta name="description" content="an unrestricted visual mini-Bible in any language">
+    <meta name="author"
+          content="Created by Distant Shores Media (http://distantshores.org) and the Door43 world missions community (http://door43.org).">
 
-        <meta name="description" content="an unrestricted visual mini-Bible in any language">
-        <meta name="author" content="Created by Distant Shores Media (http://distantshores.org) and the Door43 world missions community (http://door43.org).">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../css/reveal.min.css">
+    <link rel="stylesheet" href="../../css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="../../css/uw.css">
 
-        <link rel="stylesheet" href="../../css/reveal.min.css">
-        <link rel="stylesheet" href="../../css/theme/default.css" id="theme">
-        <link rel="stylesheet" href="../../css/uw.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../../css/zenburn.css">
 
-        <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="../../css/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text../../css';
+            link.href = '../../css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 
-        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-        <script>
-            if( window.location.search.match( /print-pdf/gi ) ) {
-                var link = document.createElement( 'link' );
-                link.rel = 'stylesheet';
-                link.type = 'text../../css';
-                link.href = '../../css/print/pdf.css';
-                document.getElementsByTagName( 'head' )[0].appendChild( link );
-            }
-        </script>
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
 
-        <!--[if lt IE 9]>
-        <script src="../../js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-
-    <div class="meny">
-        <ul>
-            <li><a href="../01/index.html">1. Yaratılış</a></li>
-            <li><a href="../02/index.html">2. Günah Dünyaya Nasıl Girdi</a></li>
-            <li><a href="../03/index.html">3. Tufan</a></li>
-            <li><a href="../04/index.html">4. Tanrı'nın İbrahim'le Ahdi</a></li>
-            <li><a href="../05/index.html">5. Vadedilen Oğul</a></li>
-            <li><a href="../06/index.html">6. Tanrı İshak’ı Kayırıyor</a></li>
-            <li><a href="../07/index.html">7. Tanrı Yakup’u Kutsuyor</a></li>
-            <li><a href="../08/index.html">8. Tanrı Yusuf’u ve Ailesini Kurtarıyor</a></li>
-            <li><a href="../09/index.html">9. Tanrı Musa’yı Çağırıyor</a></li>
-            <li><a href="../10/index.html">10. On Bela</a></li>
-            <li><a href="../11/index.html">11. Fısıh</a></li>
-            <li><a href="../12/index.html">12. Mısır’dan Çıkış</a></li>
-            <li><a href="../13/index.html">13. Tanrı’nın İsrail’le Ahdi</a></li>
-            <li><a href="../14/index.html">14. Çölde Dolaşma</a></li>
-            <li><a href="../15/index.html">15. Tanrı’nın Vadettiği Ülke</a></li>
-            <li><a href="../16/index.html">16. Kurtarıcılar</a></li>
-            <li><a href="../17/index.html">17. Tanrı’nın Davud’la Ahdi</a></li>
-            <li><a href="../18/index.html">18. Parçalanmış Krallık</a></li>
-            <li><a href="../19/index.html">19. Peygamberler</a></li>
-            <li><a href="../20/index.html">20. Sürgün ve Dönüş</a></li>
-            <li><a href="../21/index.html">21. Tanrı Mesih’i Vadediyor</a></li>
-            <li><a href="../22/index.html">22. Yahya’nın Doğuşu</a></li>
-            <li><a href="../23/index.html">23. İsa’nın Doğuşu</a></li>
-            <li><a href="../24/index.html">24. Yahya İsa’yı Vaftiz Ediyor</a></li>
-            <li><a href="../25/index.html">25. Şeytan İsa’yı Ayartıyor</a></li>
-            <li><a href="../26/index.html">26. İsa Hizmetine Başlıyor</a></li>
-            <li><a href="../27/index.html">27. İyi Samiriyeli Öyküsü</a></li>
-            <li><a href="../28/index.html">28. Zengin Genç</a></li>
-            <li><a href="../29/index.html">29. Merhametsiz Hizmetkâr Öyküsü</a></li>
-            <li><a href="../30/index.html">30. İsa Beş Bin Kişiyi Doyuruyor</a></li>
-            <li><a href="../31/index.html">31. İsa Su Üstünde Yürüyor</a></li>
-            <li><a href="../32/index.html">32. İsa Cinli Adamı ve Hasta Kadını İyileştiriyor</a></li>
-            <li><a href="../33/index.html">33. Çiftçi Öyküsü</a></li>
-            <li><a href="../34/index.html">34. İsa Diğer Öyküler Anlatıyor</a></li>
-            <li><a href="../35/index.html">35. Merhametli Baba Öyküsü</a></li>
-            <li><a href="../36/index.html">36. İsa’nın Görünüşü Değişiyor</a></li>
-            <li><a href="../37/index.html">37. İsa Lazar’ı Ölümden Diriltiyor</a></li>
-            <li><a href="../38/index.html">38. İsa’ya İhanet Ediliyor</a></li>
-            <li><a href="../39/index.html">39. İsa Sorgulanıyor</a></li>
-            <li><a href="../40/index.html">40. İsa Çarmıha Geriliyor</a></li>
-            <li><a href="../41/index.html">41. Tanrı İsa’yı Ölümden Diriltiyor</a></li>
-            <li><a href="../42/index.html">42. İsa Göğe Dönüyor</a></li>
-            <li><a href="../43/index.html">43. Kilise Başlıyor</a></li>
-            <li><a href="../44/index.html">44. Petrus’la Yuhanna Dilenciye Şifa Veriyorlar</a></li>
-            <li><a href="../45/index.html">45. Filipus’la Etiyopyalı Vezir</a></li>
-            <li><a href="../46/index.html">46. Pavlus Hristiyan Oluyor</a></li>
-            <li><a href="../47/index.html">47. Pavlus’la Silas Filipi’de</a></li>
-            <li><a href="../48/index.html">48. İsa Vadedilen Mesih’tir</a></li>
-            <li><a href="../49/index.html">49. Tanrı’nın Yeni Ahdi</a></li>
-            <li><a href="../50/index.html">50. İsa Dönüyor</a></li>
-        </ul>
-        <p><a href="https://unfoldingword.org/stories/">Open Bible Stories Home</a></p>
-    </div>
-    <div class="meny-arrow"></div>
-    <div class="reveal">
-        <div class="slides">
-            <section><h1>45. Filipus’la Etiyopyalı Vezir</h1><h3>Öykünün Kutsal Kitap’taki yeri: Elçilerin İşleri 6:8-8:5; 8:26-40​</h3><div class="uwchecking"><a href="https://unfoldingword.org/quality/" target="_blank"><img src="https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level1-64px.png" /></a></section>
+<div class="meny">
+    <ul>
+        <li><a href="../01/index.html">1. Yaratılış</a></li>
+        <li><a href="../02/index.html">2. Günah Dünyaya Nasıl Girdi</a></li>
+        <li><a href="../03/index.html">3. Tufan</a></li>
+        <li><a href="../04/index.html">4. Tanrı'nın İbrahim'le Ahdi</a></li>
+        <li><a href="../05/index.html">5. Vadedilen Oğul</a></li>
+        <li><a href="../06/index.html">6. Tanrı İshak’ı Kayırıyor</a></li>
+        <li><a href="../07/index.html">7. Tanrı Yakup’u Kutsuyor</a></li>
+        <li><a href="../08/index.html">8. Tanrı Yusuf’u ve Ailesini Kurtarıyor</a></li>
+        <li><a href="../09/index.html">9. Tanrı Musa’yı Çağırıyor</a></li>
+        <li><a href="../10/index.html">10. On Bela</a></li>
+        <li><a href="../11/index.html">11. Fısıh</a></li>
+        <li><a href="../12/index.html">12. Mısır’dan Çıkış</a></li>
+        <li><a href="../13/index.html">13. Tanrı’nın İsrail’le Ahdi</a></li>
+        <li><a href="../14/index.html">14. Çölde Dolaşma</a></li>
+        <li><a href="../15/index.html">15. Tanrı’nın Vadettiği Ülke</a></li>
+        <li><a href="../16/index.html">16. Kurtarıcılar</a></li>
+        <li><a href="../17/index.html">17. Tanrı’nın Davud’la Ahdi</a></li>
+        <li><a href="../18/index.html">18. Parçalanmış Krallık</a></li>
+        <li><a href="../19/index.html">19. Peygamberler</a></li>
+        <li><a href="../20/index.html">20. Sürgün ve Dönüş</a></li>
+        <li><a href="../21/index.html">21. Tanrı Mesih’i Vadediyor</a></li>
+        <li><a href="../22/index.html">22. Yahya’nın Doğuşu</a></li>
+        <li><a href="../23/index.html">23. İsa’nın Doğuşu</a></li>
+        <li><a href="../24/index.html">24. Yahya İsa’yı Vaftiz Ediyor</a></li>
+        <li><a href="../25/index.html">25. Şeytan İsa’yı Ayartıyor</a></li>
+        <li><a href="../26/index.html">26. İsa Hizmetine Başlıyor</a></li>
+        <li><a href="../27/index.html">27. İyi Samiriyeli Öyküsü</a></li>
+        <li><a href="../28/index.html">28. Zengin Genç</a></li>
+        <li><a href="../29/index.html">29. Merhametsiz Hizmetkâr Öyküsü</a></li>
+        <li><a href="../30/index.html">30. İsa Beş Bin Kişiyi Doyuruyor</a></li>
+        <li><a href="../31/index.html">31. İsa Su Üstünde Yürüyor</a></li>
+        <li><a href="../32/index.html">32. İsa Cinli Adamı ve Hasta Kadını İyileştiriyor</a></li>
+        <li><a href="../33/index.html">33. Çiftçi Öyküsü</a></li>
+        <li><a href="../34/index.html">34. İsa Diğer Öyküler Anlatıyor</a></li>
+        <li><a href="../35/index.html">35. Merhametli Baba Öyküsü</a></li>
+        <li><a href="../36/index.html">36. İsa’nın Görünüşü Değişiyor</a></li>
+        <li><a href="../37/index.html">37. İsa Lazar’ı Ölümden Diriltiyor</a></li>
+        <li><a href="../38/index.html">38. İsa’ya İhanet Ediliyor</a></li>
+        <li><a href="../39/index.html">39. İsa Sorgulanıyor</a></li>
+        <li><a href="../40/index.html">40. İsa Çarmıha Geriliyor</a></li>
+        <li><a href="../41/index.html">41. Tanrı İsa’yı Ölümden Diriltiyor</a></li>
+        <li><a href="../42/index.html">42. İsa Göğe Dönüyor</a></li>
+        <li><a href="../43/index.html">43. Kilise Başlıyor</a></li>
+        <li><a href="../44/index.html">44. Petrus’la Yuhanna Dilenciye Şifa Veriyorlar</a></li>
+        <li><a href="../45/index.html">45. Filipus’la Etiyopyalı Vezir</a></li>
+        <li><a href="../46/index.html">46. Pavlus Hristiyan Oluyor</a></li>
+        <li><a href="../47/index.html">47. Pavlus’la Silas Filipi’de</a></li>
+        <li><a href="../48/index.html">48. İsa Vadedilen Mesih’tir</a></li>
+        <li><a href="../49/index.html">49. Tanrı’nın Yeni Ahdi</a></li>
+        <li><a href="../50/index.html">50. İsa Dönüyor</a></li>
+    </ul>
+    <p><a href="https://unfoldingword.org/stories/">Open Bible Stories Home</a></p>
+</div>
+<div class="meny-arrow"></div>
+<div class="reveal">
+    <div class="slides"><section><h1>45. Filipus’la Etiyopyalı Vezir</h1><h3>Öykünün Kutsal Kitap’taki yeri: Elçilerin İşleri 6:8-8:5; 8:26-40​</h3><div class="uwchecking">
+    <a href="https://unfoldingword.org/quality/" target="_blank">
+        <img src="https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level1-64px.png" />
+    </a>
+</section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-01.jpg"><p>Erken kilisenin önderlerinden biri İstefanos adında bir adamdı. O’nun büyük itibarı vardı ve o, Kutsal Ruh’la ve bilgelikle doluydu. İstefanos harikalar yapıyor ve ikna edici şekilde konuşuyordu, dolayısıyla insanlar İsa’ya iman ediyorlardı.</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-02.jpg"><p>Bir gün İstefanos İsa hakkında öğretirken İsa’ya iman etmeyen bazı Yahudiler İstefanos’la tartışmaya başladılar. Onlar çok kızdılar ve din alimleriyle İstefanos’a karşı yalan söylediler. “Musa ve Tanrı hakkında kötü konuştuğunu duyduk.” dediler. Bunun üzerine din alimleri İstefanos’u yakalayıp baş kâhinin ve diğer Yahudi ileri gelenlerinin önüne getirdiler. Oraya İstefanos’a karşı yalan ifadelerde bulunan daha çok şahit gelmişti.</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-03.jpg"><p>Baş kâhin, İstefanos’a, “Bunlar doğru mu?” diye sordu. İstefanos cevabında Tanrı’nın onlar için İbrahim’den İsa’ya kadar yaptığı büyük işleri ve halkın sürekli itaatsizliğini hatırlattı. Sonra şöyle dedi: “Siz dikbaşlı, taş kalpli insanlar! Tanrı’yı reddeden, peygamberlerini öldüren atalarınız gibi hep Kutsal Ruh’u reddedersiniz! Onların yaptıklarından dahi beter bir şey yaptınız! Mesih’i katlettiniz!”</p></section>
@@ -110,87 +114,110 @@
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-11.jpg"><p>Filipus’la Etiyopyalı adam yolda giderken su bulunan bir yere geldiler. Etiyopyalı adam, “Bak! İşte su! Vaftiz olabilir miyim?” dedi. Arabanın durmasını emretti.</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-12.jpg"><p>Onlar suya girdiler ve Filipus Etiyopyalı adamı vaftiz etti. Sudan çıkınca Kutsal Ruh Filipus’u birdenbire başka bir yere götürdü ve Filipus orada insanlara İsa hakkında konuşmaya devam etti.</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/tr/2160px/obs-tr-45-13.jpg"><p>Etiyopyalı adam ise İsa’yı tanıdığına sevinerek evine doğru yol almaya devam etti.</p></section>
-<section><a href="../46/index.html"><p>Next Chapter</p></a></section>
-            </div>
-        </div>
+<section><a href="../46/index.html"><p>Next Chapter</p></a></section></div>
+</div>
 
-        <script src="../../js/head.min.js"></script>
-        <script src="../../js/reveal.min.js"></script>
-        <script src="../../js/meny.js"></script>
-        <script>
-            // Create an instance of Meny
-            var meny = Meny.create({
-                // The element that will be animated in from off screen
-                menuElement: document.querySelector( '.meny' ),
+<script src="../../js/head.min.js"></script>
+<script src="../../js/reveal.min.js"></script>
+<script src="../../js/meny.js"></script>
+<script>
+    // Create an instance of Meny
+    var meny = Meny.create({
+        // The element that will be animated in from off screen
+        menuElement: document.querySelector('.meny'),
 
-                // The contents that gets pushed aside while Meny is active
-                contentsElement: document.querySelector( '.reveal' ),
+        // The contents that gets pushed aside while Meny is active
+        contentsElement: document.querySelector('.reveal'),
 
-                // [optional] The alignment of the menu (top/right/bottom/left)
-                position: Meny.getQuery().p || 'left',
+        // [optional] The alignment of the menu (top/right/bottom/left)
+        position: Meny.getQuery().p || 'left',
 
-                // [optional] The height of the menu (when using top/bottom position)
-                height: 200,
+        // [optional] The height of the menu (when using top/bottom position)
+        height: 200,
 
-                // [optional] The width of the menu (when using left/right position)
-                width: 300,
+        // [optional] The width of the menu (when using left/right position)
+        width: 300,
 
-                // [optional] Distance from mouse (in pixels) when menu should open
-                threshold: 40,
+        // [optional] Distance from mouse (in pixels) when menu should open
+        threshold: 40,
 
-                // [optional] Use mouse movement to automatically open/close
-                mouse: true,
+        // [optional] Use mouse movement to automatically open/close
+        mouse: true,
 
-                // [optional] Use touch swipe events to open/close
-                touch: true
-            });
+        // [optional] Use touch swipe events to open/close
+        touch: true
+    });
 
-            // API Methods:
-            // meny.open();
-            // meny.close();
-            // meny.isOpen();
+    // API Methods:
+    // meny.open();
+    // meny.close();
+    // meny.isOpen();
 
-            // Events:
-            // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
-            // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
-        </script>
+    // Events:
+    // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+    // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+</script>
 
-        <script>
+<script>
 
-            var flyOutNotes;
+    var flyOutNotes;
 
-            // Full list of configuration options available here:
-            // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: false,
-                width: '100%',
-                height: '100%',
-                margin: 0,
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: '100%',
+        height: '100%',
+        margin: 0,
 
-                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
-                // Parallax scrolling
-                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-                // parallaxBackgroundSize: '2100px 900px',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-                // Optional libraries used to extend on reveal.js
-                dependencies: [
-                    { src: '../../js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: '../../js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: '../../js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: '../../js/obs-notes.js', async: true, callback: function() {
-                        flyOutNotes = new FlyOutNotes();
-                        window.addEventListener('hashchange', function() { flyOutNotes.loadNotes() });
-                    } }
-                ]
-            });
-        </script>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: '../../js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: '../../js/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../js/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../js/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: '../../js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: '../../js/obs-notes.js', async: true, callback: function () {
+                flyOutNotes = new FlyOutNotes();
+                window.addEventListener('hashchange', function () {
+                    flyOutNotes.loadNotes()
+                });
+            }
+            }
+        ]
+    });
+</script>
 
-    </body>
+</body>
 </html>
